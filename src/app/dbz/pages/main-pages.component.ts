@@ -19,4 +19,13 @@ export class MainPageComponent {
         power: 15000
     }];
 
+    onNewCharacter(character: Character):void{
+        this.characters.unshift(character);
+        console.log(character)
+    }
+
+    onDeleteCharacter(index:number){
+        this.characters.splice(index);
+    }
+
 }
